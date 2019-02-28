@@ -15,7 +15,7 @@ Refer to it if you run into any issues with my instructions or contact me at nat
 
 #>
 
-# Hash table variable used to setup SKU target values. 
+# Hash table used to setup SKU target values. You'll need to update this with your target values received in #L29.
 $targetSkus = @{
   AddLicenses = "domain:ENTERPRISEPACK"
   RemoveLicenses = "domain:O365_BUSINESS_ESSENTIALS"
@@ -46,7 +46,6 @@ Get-MsolUser -All | Where-Object {
 } | 
 Set-MsolUserLicense @targetSkus
 
-
 <#
 
 If you receive the following error after attempting the swap:
@@ -56,8 +55,8 @@ It's because the user already has the license applied to them. You can verify wi
 
 Lastly, I like to re-run some of the previous steps to verify everything is good:
 
-Run #L29-L32 again to verify target SKU was removed from all users. Should return an empty line.
-Run #L29-L32, switching out the hash value with '.AddLicenses', to verify target SKU was added to all users.
-Run #L23 again to verify 'ConsumedUnits' counts.
+Run #L35-L38 again to verify target SKU was removed from all users. Should return an empty line.
+Run #L35-L38, switching out the hash value with '.AddLicenses', to verify target SKU was added to all users.
+Run #L29 again to verify 'ConsumedUnits' counts.
 
 #>
