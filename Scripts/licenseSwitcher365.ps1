@@ -2,10 +2,14 @@
 
 Adding licenses to users in 365 can lead to conflicts and headaches.
 Below is the workflow I use when switching over "large" tenants from 365 Business SKUs over to Enterprise SKUs.
+
 In order to run through this, you will need to install the Microsoft Azure Active Directory Module for Windows PowerShell.
-Instructions to do so are here: https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell
-Shoutout to Jakob Østergaard Nielsen's blog article (http://www.mistercloudtech.com/2017/03/28/how-to-switch-office-365-licenses-using-powershell/)
-that served as a succinct reference when building this out. Refer to it if you run into any issues with my instructions or contact me at nathan@trustedtechteam.com
+Instructions to do so are here:
+https://docs.microsoft.com/en-us/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell
+
+Shoutout to Jakob Østergaard Nielsen's blog article--It served as a succinct reference when building this out. 
+(http://www.mistercloudtech.com/2017/03/28/how-to-switch-office-365-licenses-using-powershell/)
+Refer to it if you run into any issues with my instructions or contact me at nathan@trustedtechteam.com
 
 #>
 
