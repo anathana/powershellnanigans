@@ -1,7 +1,9 @@
 <#
 
 Adding licenses to users in 365 can lead to conflicts and headaches.
-Below is the workflow I use when switching over "large" tenants from 365 Business SKUs over to Enterprise SKUs.
+Below is the general workflow I use when switching over "large" tenants from 365 Business SKUs over to Enterprise SKUs.
+In its current state, this "script" is intended to be used as a granular template of individually executed commands,
+not a ".\ + enter" solution. However, it could serve as the foundation of such a solution once you get into the flow of things.
 
 In order to run through this, you will need to install the Microsoft Azure Active Directory Module for Windows PowerShell.
 Instructions to do so are here:
