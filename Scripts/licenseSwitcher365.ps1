@@ -1,7 +1,6 @@
 <#
 
-Adding licenses to users in 365 can lead to conflicts and headaches.
-Below is the general workflow I use when switching over "large" tenants from 365 Business SKUs over to Enterprise SKUs.
+Below is the general workflow I use to swap user seats in bulk between Office 365 Business and Enterprise SKUs. 
 In its current state, this "script" is intended to be used as a granular template of individually executed commands,
 not a ".\ + enter" solution. However, it could serve as the foundation of such a solution once you get into the flow of things.
 
