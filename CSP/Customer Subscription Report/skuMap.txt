@@ -1,4 +1,4 @@
-@{
+{
     "AAD_BASIC" = "Azure Active Directory Basic";
     "AAD_BASIC_AAD_BASIC" = "Azure AD Basic - Azure Active Directory Basic";
     "AAD_BASIC_EDU" = "Azure Active Directory Basic for EDU";
