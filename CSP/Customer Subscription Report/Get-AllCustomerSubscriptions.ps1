@@ -60,12 +60,14 @@ $CSVpath = ".\$partnerName\$partnerName-Customer-report.csv"
   
 foreach ($customer in $customers) {
     Write-Host "Retrieving license info for $($customer.name)" -ForegroundColor Green
+
+    # Get the list subscriptions and their respective seat counts in the tenant
     $skuList = Get-MsolAccountSku -TenantId $customer.TenantId
-  
     foreach ($sku in $skuList) {
         Write-Host "$($sku.AccountSkuId)" -ForegroundColor Yellow
         $tenantSkuList = [pscustomobject][ordered]@{
             CustomerName      = $customer.Name
+            Domain            = $customer.DefaultDomainName
             TenantId          = $customer.TenantId
             Product           = $(TranslateSku($sku.AccountSkuId))
             Assigned          = $sku.ConsumedUnits
